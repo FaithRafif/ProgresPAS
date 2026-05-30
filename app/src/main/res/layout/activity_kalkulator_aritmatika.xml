@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KalkulatorAritmatika">
+
+
+    <TextView
+        android:id="@+id/kalkulator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator Aritmatika"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <EditText
+        android:id="@+id/angkaPertama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Angka Pertama"
+        android:layout_marginTop="35dp"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/kalkulator"
+        />
+    <EditText
+        android:id="@+id/angkaKedua"
+        android:layout_width="0dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content"
+        android:hint="Angka Kedua"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/angkaPertama"
+
+        />
+    <LinearLayout
+       android:layout_width="match_parent"
+        android:id="@+id/LinearButton"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/angkaKedua"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop = "20dp"
+        >
+    <Button
+        android:id="@+id/BtnKali"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="X"
+        />
+    <Button
+        android:id="@+id/BtnBagi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="/"
+        />
+    <Button
+        android:id="@+id/BtnKurang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="-"
+        />
+    <Button
+        android:id="@+id/BtnTambah"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="+"
+        />
+   </LinearLayout>
+
+<TextView
+    android:id="@+id/TvHasil"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hasil : "
+    android:textSize="35dp"
+    app:layout_constraintTop_toBottomOf="@id/LinearButton"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

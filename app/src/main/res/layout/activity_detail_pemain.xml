@@ -1,0 +1,123 @@
+<!-- res/layout/activity_detail_pemain.xml -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Hero: nomor punggung besar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="#1565C0"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvNomor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#10"
+                android:textSize="64sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Pemain"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <!-- Card info -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="POSISI"
+                android:textSize="11sp"
+                android:textColor="#888"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tvPosisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penyerang"
+                android:textSize="18sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KLUB"
+                android:textSize="11sp"
+                android:textColor="#888"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tvKlub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Klub"
+                android:textSize="18sp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INFO"
+                android:textSize="11sp"
+                android:textColor="#888"
+                android:letterSpacing="0.1" />
+
+            <TextView
+                android:id="@+id/tvInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Info pemain"
+                android:textSize="15sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
